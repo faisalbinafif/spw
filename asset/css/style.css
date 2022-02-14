@@ -1,0 +1,736 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =======================================
+
+            HEADER SECTION 
+
+======================================= */
+
+#header nav svg {
+    width: 11.875rem;
+    height: 3.875rem;
+    margin-left: 1.25rem;
+}
+
+#header nav svg:hover {
+    fill: #B56B6B;
+}
+
+#header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.625rem 0;
+}
+
+#header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header nav ul li {
+    list-style-type: none;
+    text-transform: uppercase;
+    padding: 0 0.938rem;
+    font-size: 1rem;
+}
+
+#header nav i {
+    margin-left: 0.938rem;
+    padding-right: 1.25rem;
+}
+
+/* =======================================
+
+            COUNTER SECTION 
+
+======================================= */
+
+
+#counter {
+    height: 3.38rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFEAE6;
+}
+
+#counter p {
+    display: inline-block;
+    padding: 0.625rem 1.25rem;
+    font-size: 1.188rem;
+}
+
+#counter p .bold_counter {
+    font-weight: 800;
+}
+
+#counter p .underline_text:hover {
+    text-decoration: underline;
+}
+
+#counter p i {
+    padding: 0 0.625rem;
+}
+
+/* =======================================
+
+            BANNER SECTION 
+
+======================================= */
+
+#banner img {
+    height: 100%;
+    width: 100%;
+}
+
+/* =======================================
+
+            B-CARD SECTION 
+
+======================================= */
+
+#bcard div {
+    margin: -6.25rem 21.875rem 0 21.875rem;
+    background: white;
+    position: absolute;
+    padding: 2rem 1rem 0;
+    border-top: 0.063rem solid rgba(0, 0, 0, 0.09);
+    border-right: 0.063rem solid rgba(0, 0, 0, 0.09);
+    border-left: 0.063rem solid rgba(0, 0, 0, 0.09);
+    box-shadow: 0.375rem 0 0.25rem -0.25rem rgba(0, 0, 0, 0.09), -0.375rem 0 0.25rem -0.25rem rgba(0, 0, 0, 0.09);
+    -moz-box-shadow: 0.375rem 0 0.25rem -0.25rem rgba(0, 0, 0, 0.09), -0.375rem 0 0.25rem -0.25rem rgba(0, 0, 0, 0.09);
+    -webkit-box-shadow: 0.375rem 0 0.25rem -0.25rem rgba(0, 0, 0, 0.09), -0.375rem 0 0.25rem -0.25rem rgba(0, 0, 0, 0.09);
+}
+
+#bcard div p {
+    font-size: 3rem;
+    text-align: center;
+    padding: 0 0.188rem;
+}
+
+#bcard div p:nth-child(1) {
+    font-size: 0.938rem;
+    color: #00727A;
+    padding: 0.625rem 0;
+    text-transform: uppercase;
+}
+
+#bcard div p:nth-child(2) {
+    text-transform: capitalize;
+}
+
+#bcard div p:nth-child(2):hover {
+    text-decoration: #00727A underline 0.125rem;
+}
+
+hr {
+    height: 0.313rem;
+    border-top: 0.094rem solid #00727A;
+    border-bottom: 0.094rem solid #00727A;
+    margin: 1.563rem 16.875rem 0;
+}
+
+/* =======================================
+
+        B-CARD_THREE SECTION
+
+======================================= */
+
+#three-card {
+    display: flex;
+    justify-content: center;
+    padding: 1.25rem 0;
+    margin-top: 9.375rem;
+}
+
+#three-card div:nth-child(1) {
+    background: url('../images/dogs/pup1.webp') no-repeat center;
+    background-size: cover;
+    width: 45vw;
+    height: 65vh;
+    margin: 0.625rem;
+}
+
+#three-card div:nth-child(1) p {
+    background-color: white;
+    text-align: center;
+    margin: 15.625rem 6.25rem 0;
+    padding: 0.938rem;
+    font-size: 1.875rem;
+}
+
+#three-cad div {
+    margin: 0.313rem;
+}
+
+#three-card div img {
+    height: 35vh;
+    border-radius: 0.125rem;
+}
+
+#three-card div:nth-child(2),
+#three-card div:nth-child(3) {
+    padding: 0.625rem 0.938rem;
+}
+
+.bcard-stitle {
+    text-transform: uppercase;
+    color: gray;
+    padding: 0.188rem 0;
+    font-size: 0.938rem;
+}
+
+.bcard-btitle {
+    font-size: 2.188rem;
+    padding: 0.313rem 0;
+}
+
+.bcard-author span {
+    text-transform: uppercase;
+    padding: 0 0.5rem;
+    color: #00727A;
+}
+
+/* =======================================
+
+        HORSE-TITLE SECTION
+
+======================================= */
+
+#horse-title div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 9vh;
+}
+
+#horse-title div p {
+    font-size: 2.188rem;
+    text-transform: capitalize;
+    padding: 0 0.938rem;
+}
+
+#horse-title div p:hover {
+    text-decoration: underline #00727A;
+}
+
+#horse-title div i {
+    color: #00727A;
+}
+
+/* =======================================
+
+        HORSE-CARD SECTION
+
+======================================= */
+
+#horse-card {
+    display: flex;
+    justify-content: space-around;
+    padding: 1.25rem;
+    margin: 1.875rem 0;
+}
+
+#horse-card div img {
+    width: 30vw;
+}
+
+#horse-card .bcard-stitle {
+    text-transform: uppercase;
+    font-size: 0.938rem;
+    color: gray;
+    margin: 0.313rem 0;
+}
+
+#horse-card .bcard-btitle {
+    text-transform: capitalize;
+    font-size: 2.188rem;
+    margin-right: 2.188rem;
+    margin-top: 0.625rem;
+}
+
+#horse-card .bcard-author {
+    margin: 0.313rem 0;
+}
+
+#horse-card .bcard-author span {
+    text-transform: uppercase;
+    padding-left: 0.625rem;
+    font-size: 0.938rem;
+    color: #00727A;
+}
+
+/* =======================================
+
+        VETERINARY SECTION
+
+======================================= */
+
+
+#veterinary {
+    background: url('../images/bg/bg-blue.jpg');
+    display: flex;
+}
+
+#veterinary .div_one,
+#veterinary .div_two {
+    width: 50%;
+    text-align: center;
+    margin: 1.563rem 0;
+}
+
+#veterinary .div_one .banner-size {
+    padding: 0.625rem 0;
+    width: 40vh;
+}
+
+#veterinary .div_one .main_vetn_t {
+    text-transform: uppercase;
+    font-size: 1.375rem;
+    padding: 0.313rem 10rem;
+    color: #00727A;
+}
+
+#veterinary .div_one .main_vetn_p {
+    font-size: 0.938rem;
+    letter-spacing: 0.125rem;
+    line-height: 1.375rem;
+    padding: 0.375rem 4.375rem;
+}
+
+#veterinary .div_one div {
+    display: flex;
+    justify-content: center;
+    margin: 0.625rem 0;
+}
+
+#veterinary .div_one div p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0.625rem;
+    font-size: 1.563rem;
+    font-weight: 550;
+    letter-spacing: 0.313rem;
+    text-transform: capitalize;
+}
+
+#veterinary .div_one div p img {
+    width: 2.5rem;
+    margin: 0 0.313rem;
+}
+
+#veterinary .div_two .main-hleft {
+    font-size: 1.875rem;
+    margin: 0.125rem 11.25rem;
+}
+
+#veterinary .div_two .p-left_sec {
+    padding: 0.313rem 0;
+}
+
+#veterinary .div_two .p-left_sec:hover {
+    text-decoration: underline;
+}
+
+#veterinary .div_two .card-row1 {
+    display: flex;
+    justify-content: center;
+}
+
+#veterinary .div_two .card-row1 .card-row1_c1 {
+    /* border: #00727A 0.125 solid; */
+    border-bottom: 0.5rem solid #00727A;
+    border-top: 0.063rem solid #00727A;
+    border-right: 0.063rem solid #00727A;
+    border-left: 0.063rem solid #00727A;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 0.625rem;
+    background: white;
+    height: 18vh;
+    width: 20vw;
+    padding-left: 0.938rem;
+}
+
+#veterinary .div_two .card-row1 .card-pimg {
+    border-radius: 50%;
+    width: 3.125rem;
+    margin-right: 0.375rem;
+}
+
+#veterinary .div_two .card-row1 .card-row1_c1 .card_content {
+    margin: 0 0.313rem;
+    text-align: left;
+}
+
+#veterinary .div_two .card-row1 .card-row1_c1 .card_content .title {
+    font-size: 1.25rem;
+    text-transform: capitalize;
+}
+
+#veterinary .div_two .card-row1 .card-row1_c1 .card_content .title:hover {
+    text-decoration: #00727A underline;
+}
+
+#veterinary .div_two .card-row1 .card-row1_c1 .card_content .para {
+    text-transform: uppercase;
+    font-size: 0.625rem;
+    margin: 0.313rem 0;
+    color: #00727A;
+}
+
+#veterinary .div_two .card-row1 .card-row1_c1 .card_content .title span {
+    text-transform: uppercase;
+}
+
+/* =======================================
+
+        SUBSCRIBER SECTION
+
+======================================= */
+
+#subscribe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3.125rem 0;
+}
+
+#subscribe .subs-div1 {
+    display: flex;
+    align-items: center;
+}
+
+#subscribe .subs-div1 img {
+    width: 6vw;
+    margin: 0 0.938rem;
+}
+
+#subscribe .subs-div1 .subdiv {
+    margin-right: 2.188rem;
+}
+
+#subscribe .subs-div1 .divh {
+    text-transform: capitalize;
+    font-size: 1.438rem;
+    letter-spacing: 0.188rem;
+}
+
+#subscribe .subs-div1 .divtxt {
+    text-transform: capitalize;
+    font-size: 1.125rem;
+    letter-spacing: 0.188rem;
+    padding-top: 0.25rem;
+    color: gray;
+}
+
+#subscribe .subs-div2 input:nth-child(1) {
+    width: 15vw;
+    height: 7vh;
+    margin: 0 -0.313rem;
+    border: rgb(185, 184, 184) 0.063rem solid;
+}
+
+#subscribe .subs-div2 input:nth-child(2) {
+    width: 7vw;
+    height: 7vh;
+    background-color: #00727A;
+    border: none;
+}
+
+/* =======================================
+
+            CAT LANG TITLE SECTION
+
+======================================= */
+
+#cat-langt div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 9vh;
+}
+
+#cat-langt div p {
+    font-size: 2.188rem;
+    text-transform: capitalize;
+    padding: 0 0.938rem;
+}
+
+#cat-langt div p:hover {
+    text-decoration: underline #00727A;
+}
+
+#cat-langt div i {
+    color: #00727A;
+}
+
+/* =======================================
+
+            CAT LANG CARD SECTION
+
+        ======================================= */
+#catl-card {
+    display: flex;
+    justify-content: space-around;
+    padding: 1.25rem;
+    margin: 1.875rem 0;
+}
+
+#catl-card div img {
+    width: 30vw;
+}
+
+#catl-card .bcard-stitle {
+    text-transform: uppercase;
+    font-size: 0.938rem;
+    color: gray;
+    margin: 0.313rem 0;
+}
+
+#catl-card .bcard-btitle {
+    text-transform: capitalize;
+    font-size: 2.188rem;
+    margin-right: 2.188rem;
+    margin-top: 0.625rem;
+}
+
+#catl-card .bcard-author {
+    margin: 0.313rem 0;
+}
+
+#catl-card .bcard-author span {
+    text-transform: uppercase;
+    padding-left: 0.625rem;
+    font-size: 0.938rem;
+    color: #00727A;
+}
+
+/* =======================================
+
+            EXPLORE CARD SECTION
+
+        ======================================= */
+
+#expo-card .title_d {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 9vh;
+}
+
+#expo-card .title_d p {
+    font-size: 2.188rem;
+    text-transform: capitalize;
+    padding: 0 0.938rem;
+}
+
+#expo-card .title_d p:hover {
+    text-decoration: underline #00727A;
+}
+
+#expo-card .expo-card_r1,
+#expo-card .expo-card_r2,
+#expo-card .expo-card_r3,
+#expo-card .expo-card_r4,
+#expo-card .expo-card_r5 {
+    display: flex;
+    margin: 30px 0;
+    /* width: 100vw; */
+}
+
+#expo-card .expo-card_r1 .card-areas,
+#expo-card .expo-card_r2 .card-areas,
+#expo-card .expo-card_r3 .card-areas,
+#expo-card .expo-card_r4 .card-areas,
+#expo-card .expo-card_r5 .card-areas {
+    padding: 4px 10px;
+}
+
+#expo-card .expo-card_r1 img,
+#expo-card .expo-card_r2 img,
+#expo-card .expo-card_r3 img,
+#expo-card .expo-card_r4 img,
+#expo-card .expo-card_r5 img {
+    width: 23vw;
+}
+
+#expo-card .expo-card_r1 .bcard-stitle,
+#expo-card .expo-card_r2 .bcard-stitle,
+#expo-card .expo-card_r3 .bcard-stitle,
+#expo-card .expo-card_r4 .bcard-stitle,
+#expo-card .expo-card_r5 .bcard-stitle {
+    text-transform: uppercase;
+    color: grey;
+}
+
+#expo-card .expo-card_r1 .bcard-btitle,
+#expo-card .expo-card_r2 .bcard-btitle,
+#expo-card .expo-card_r3 .bcard-btitle,
+#expo-card .expo-card_r4 .bcard-btitle,
+#expo-card .expo-card_r5 .bcard-btitle {
+    text-transform: capitalize;
+    font-size: 30px;
+}
+
+#expo-card .expo-card_r1 .bcard-btitle:hover,
+#expo-card .expo-card_r2 .bcard-btitle:hover,
+#expo-card .expo-card_r3 .bcard-btitle:hover,
+#expo-card .expo-card_r4 .bcard-btitle:hover,
+#expo-card .expo-card_r5 .bcard-btitle:hover {
+    text-decoration: underline #00727A;
+}
+
+#expo-card .expo-card_r1 .bcard-author,
+#expo-card .expo-card_r2 .bcard-author,
+#expo-card .expo-card_r3 .bcard-author,
+#expo-card .expo-card_r4 .bcard-author,
+#expo-card .expo-card_r5 .bcard-author {
+    margin-top: 10px;
+}
+
+#expo-card .expo-card_r1 .bcard-author span,
+#expo-card .expo-card_r2 .bcard-author span,
+#expo-card .expo-card_r3 .bcard-author span,
+#expo-card .expo-card_r4 .bcard-author span,
+#expo-card .expo-card_r5 .bcard-author span {
+    margin-left: 8px;
+    text-transform: uppercase;
+    color: #00727A;
+}
+
+.hr_bar {
+    height: 0.313rem;
+    border-top: 0.094rem solid #00727A;
+    border-bottom: 0.094rem solid #00727A;
+    margin: 1.563rem 0 0;
+}
+
+/* =======================================
+
+            BOTTOM SECTION
+
+        ======================================= */
+
+#bottom-area {
+    display: flex;
+}
+
+#bottom-area .bot-div {
+    width: 50%;
+    margin: 0.313rem 2.5rem;
+}
+
+#bottom-area .bot-div svg {
+    width: 18vw;
+    padding: 1.875rem 0;
+}
+
+#bottom-area .bot-div svg:hover {
+    fill: #B56B6B;
+}
+
+#bottom-area .bot-div .input_txt {
+    font-size: 1.25rem;
+    margin-right: 12.5rem;
+    padding: 0.313rem 0 0.938rem;
+}
+
+#bottom-area .bot-div .in_div {
+    margin-bottom: 3.125rem;
+}
+
+#bottom-area .bot-div .in_div .inp_1 {
+    height: 3.125rem;
+    width: 18.75rem;
+    outline: none;
+    padding-left: 0.625rem;
+    border: 0.063rem solid gray;
+}
+
+#bottom-area .bot-div .in_div .inp_2 {
+    height: 3.125rem;
+    width: 6.25rem;
+    margin-left: -0.313rem;
+    background-color: #00727A;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#bottom-area .bot-div .social {
+    display: flex;
+    align-items: center;
+}
+
+#bottom-area .bot-div .social .s_head {
+    color: gray;
+    text-transform: capitalize;
+    font-size: 1.125rem;
+    padding-right: 0.625rem;
+}
+
+#bottom-area .bot-div .social i {
+    color: #00727A;
+    font-size: 1.75rem;
+    padding: 0 0.625rem;
+    cursor: pointer;
+}
+
+#bottom-area .bot-div:nth-child(2) {
+    display: flex;
+    padding: 1.25rem 0;
+}
+
+#bottom-area .bot-div .f-li,
+#bottom-area .bot-div .s-li,
+#bottom-area .bot-div .t-li {
+    margin: 0 1.875rem 0 0;
+}
+
+#bottom-area .bot-div .f-li li,
+#bottom-area .bot-div .s-li li,
+#bottom-area .bot-div .t-li li {
+    list-style-type: none;
+    margin-right: 1.25rem;
+    padding: 0.375rem 0.625rem 0.375rem 0;
+    color: #00727A;
+}
+
+#bottom-area .bot-div .f-li {
+    font-size: 1.563rem;
+}
+
+#bottom-area .bot-div .s-li,
+#bottom-area .bot-div .t-li {
+    font-size: 1.063rem;
+    text-transform: capitalize;
+}
+
+#bottom-area .bot-div .s-li li,
+#bottom-area .bot-div .t-li li {
+    color: darkgray;
+}
+
+/* =======================================
+
+            COPYRIGHT SECTION
+
+======================================= */
+
+#copyright p {
+    border-top: 0.063rem solid darkgray;
+    text-align: center;
+    font-size: 1.125rem;
+    letter-spacing: 0.125rem;
+    text-transform: capitalize;
+    padding: 0.938rem 0;
+}

@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spruce Pet</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="asset/css/style.css">
+</head>
+
+<body>
+
+    <!-- =======================================
+
+            HEADER SECTION 
+
+        =======================================  -->
+    <section id="header">
+        <nav>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 171.5 53.9">
+                <path
+                    d="M7.2 44.1c-1.9 0-3.7-.7-5.3-1.8h-.2L.3 43.6H.1L0 36.2h.2c.6 4.1 3.9 7.4 7 7.4 2.3 0 3.5-.8 3.5-3.6 0-1.9-2-3.3-5-4.7-3-1.3-5.5-3-5.5-6.6.1-3.3 2.8-5.9 6.1-5.8h.2c1.6 0 3.1.5 4.3 1.5h.1l1.2-1.2h.1l.2 5.9h-.2c-.3-1.6-1.1-3-2.2-4.1-1-.9-2.3-1.5-3.6-1.5-1.6-.1-2.9 1.2-3 2.8v.4c0 2.4 1.9 3.5 4.5 4.6 3.4 1.4 6 3 6 6.4.1 4.4-3 6.4-6.7 6.4zM27.1 44.1c-1.9.1-3.8-.5-5.1-1.9h-.1v5.4c-.1 1.3 0 2.6.2 3.8.1.9.8 1.7 1.7 2 .3.1.7.2 1 .2v.2H15v-.2c.3 0 .7-.1 1-.2.9-.2 1.6-1 1.7-2 .2-1.3.3-2.6.2-3.8V29.1c0-.9 0-2.5-.1-3.3 0-.6-.3-1.2-.9-1.6-.7-.4-1.4-.7-2.2-.7v-.2h6.8c.2 0 .4.1.4.4l-.1 3.1h.2c1-2.3 3.2-3.9 5.8-4 4.4 0 8.2 3.3 8.2 10.6-.1 6.8-3.8 10.7-8.9 10.7zm-.2-20.4c-2.6 0-5.1 2.9-5.1 6.8v6.1c-.1 1.8.4 3.7 1.4 5.2a4.6 4.6 0 003.6 1.7c2.6 0 4.5-2.4 4.5-10s-1.9-9.8-4.4-9.8zM50.5 27.9c-1-.1-1.9-.8-2.2-1.8-.3-.8-.6-1-1.1-1-.9 0-2.8 2.4-3.1 6.1 0 .4-.1 1.7-.1 2.9v3.3c-.1 1.3 0 2.6.2 3.9.1.9.7 1.7 1.6 1.9.4.1.7.2 1.1.2v.2H37v-.2c.4 0 .7-.1 1.1-.2.9-.2 1.5-1 1.6-1.9.2-1.3.3-2.6.2-3.9v-8c0-.9 0-3.1-.1-3.8 0-.6-.4-1.2-.9-1.6-.5-.3-1.1-.4-1.6-.4v-.2h6.5c.2 0 .3.1.3.3v5c.4-1.7 1.4-3.3 2.6-4.5.9-.7 2-1.2 3.2-1.2.8 0 1.6.3 2.3.8.5.6.7 1.3.6 2 .1 1.2-.8 2.2-2 2.3-.1-.2-.2-.2-.3-.2zM68.3 43.8c-.1 0-.2-.1-.2-.2v-3.8H68c-.4 1.2-1.2 2.3-2.2 3.1-1.1.8-2.5 1.3-3.8 1.2-1.7.1-3.4-.5-4.6-1.8-.8-1.3-1.3-2.8-1.2-4.4v-9.1c0-.9 0-2.3-.1-3 0-.7-.3-1.4-.9-1.9-.6-.3-1.2-.4-1.8-.4v-.2h6.7c.1 0 .3 0 .3.4V38.6c-.1 1.2.2 2.3.7 3.4.6.8 1.6 1.3 2.6 1.2 2 0 3.9-2.4 4.3-5.6.1-1.1.2-2.1.1-3.2v-5.5c0-1 0-2-.1-3 0-.7-.3-1.4-.9-1.8-.6-.3-1.2-.5-1.8-.5v-.2H72c.2 0 .3.1.3.4v14.5c0 .9 0 2.2.1 3 0 .7.4 1.4 1 1.9.6.3 1.2.4 1.8.4v.2c-.9-.2-6.7 0-6.9 0zM85.2 44.1c-2.4 0-4.7-.9-6.4-2.5-2-2-2.7-4.8-2.7-8.3 0-6.5 4.9-10.4 9.2-10.4 2.9 0 5.1 1.1 6 2.2.6.6.9 1.4 1 2.2.1 1-.7 2-1.7 2.1h-.2c-1.7 0-2.2-1-2.4-2.5-.4-2.4-.9-3.4-2.8-3.4-1 0-1.9.4-2.7 1-1.2 1.1-1.8 4.3-1.8 8 0 4.3.7 7.3 1.9 9.1.6 1.1 1.8 1.7 3 1.6 4.2 0 5.7-3.6 6.4-6.1l.6.2c-1 3.7-3.5 6.8-7.4 6.8zM112.5 32.2H99.7c0 4.5.8 7.6 2.2 9.2.9 1 2.2 1.5 3.6 1.4 4.1 0 5.5-2.6 6.4-5.8l.5.1c-.8 4.2-3.7 6.9-7.7 6.9-2.5.1-5-.7-6.8-2.4-1.9-2.1-2.7-4.6-2.7-8 0-6.4 3.8-10.8 8.9-10.8 5.9 0 8.6 4 8.6 7.7-.1.5-.1 1.2-.2 1.7zm-5.8-7.8c-.7-.7-1.7-1-2.6-1-.9 0-1.8.3-2.4 1-1.1 1-1.8 3.6-1.9 7.1h6.7c1.3 0 1.8-.5 1.8-2.1-.2-2.5-.7-4-1.6-5zM7.2 17.9c-.8.1-1.6-.2-2.2-.7-.5-.5-.8-1.2-.7-1.9 0-.5.1-7 .1-8.2C4 7 3.3 7.1 2.9 7v-.1c1.6-.3 2.7-1.3 3.6-4.7h.2v4.5h2.6v.4H6.7l-.1 8.5c0 .9.4 1.5 1.4 1.5.7 0 1.4-.4 1.8-1l.1.1c-.6 1-1.6 1.6-2.7 1.7zM10.9 17.6c.2 0 .4-.1.6-.1.5-.1.8-.5.9-1 .1-.7.1-1.4.1-2.1V2.9c0-.6 0-1.1-.1-1.7 0-.3-.2-.7-.5-.8-.3-.2-.7-.3-1-.3V0h3.7c.1 0 .2.1.2.2 0 .5-.1 1.9-.1 3v6h.1c.3-.9.8-1.6 1.6-2.1.6-.4 1.4-.6 2.1-.6.9-.1 1.8.2 2.5.9.5.7.7 1.6.6 2.5v4.4c0 .7 0 1.4.1 2.1 0 .5.4.9.9 1.1.2.1.4.1.6.1v.1h-5.3v-.1c.2 0 .4-.1.6-.1.5-.2.7-.4.9-1.1.1-.7.2-1.4.1-2.1V9.9c.1-.7 0-1.4-.4-2.1-.3-.4-.9-.7-1.4-.6-1.5.2-2.7 1.5-2.7 3.1-.1.6-.1 1.2-.1 2v2c0 .7 0 1.4.1 2.1.2.7.4.8.9 1 .2.1.4.1.6.1v.1h-5.3zM33.5 11.5h-6.9c0 2.4.4 4.1 1.2 4.9.5.5 1.2.8 1.9.8 2.2 0 2.9-1.4 3.4-3.1l.3.1c-.2 2.1-2 3.7-4.2 3.7-1.4.1-2.7-.4-3.7-1.3-1-1.2-1.6-2.7-1.4-4.3 0-3.5 2-5.8 4.8-5.8 3.2 0 4.6 2.1 4.6 4.2v.8zm-3.2-4.2c-.3-.3-.8-.5-1.4-.5-.5 0-1 .2-1.3.5-.6.5-1 1.9-1 3.8h3.6c.7 0 1-.3 1-1.1 0-1-.2-1.9-.9-2.7z">
+                </path>
+                <path fill="#B56C6C"
+                    d="M128.1 26.8c0-1.2 1.6-1.4 2.7-1.4 7.2 0 15.9-8.7 15.9-14 0-4.6-2.2-6.9-7.9-6.9-13.3 0-23.4 9.2-23.4 15.8 0 .6.6 1.2.6 1.9 0 1.1-1 1.9-2 1.9h-.1c-1.1-.1-2-1.2-1.9-2.3 0-10.7 11.8-19.9 27.7-19.9 6.3 0 10 3.2 10 9.2 0 7.4-10.6 17.6-19 17.6-1.8-.1-2.6-.8-2.6-1.9zm7.7-15.7c0 .8-.9 1.6-2 2.6-3.1 3-5.8 6.4-7.8 10.2-5.9 10.4-6.3 15.6-6.3 19.3 0 .6 0 1.7-.9 1.7-1.2 0-2.3-.9-2.4-2.2 0-1.3.9-9 6.7-19.4 3.7-6.6 6.6-10.4 8.6-12.2.7-.8 1.7-1.4 2.8-1.4.7-.1 1.4.5 1.5 1.2-.2 0-.2.1-.2.2zM161.1 23.9c1.7-.7 3.4-1.1 5.2-1.2 1 0 1.9.1 1.9.7 0 .3-.1.6-.1 1s.1.6.7.6c.9 0 2.1-1.4 2.1-2.7 0-1.4-1.2-2.2-3.6-2.2-1.5 0-2.9.3-4.4.7 2.3-3.9 2.7-4.8 3.8-5.8 1.3-1 1.4-1.6 1.4-2.4s-.5-1.2-1.4-1.2-1.6.7-2.8 2.3c-1.8 2.6-3.4 5.4-4.9 8.2-.7.2-1.4.2-2.1.3-.8 0-1-.5-2-.5-.9 0-1.7.7-1.8 1.6v.1c0 1 .8 1.4 2.9 1.4.5 0 1 0 1.4-.1-1.1 2.1-2.1 4.3-3.1 6.5-.2.2-.4.4-.6.7-2.4 3.3-7.3 8.7-13.3 8.7-1.1 0-2-.8-2-1.9v-.1c0-.7.1-1.1 1.3-1.4 4.2-1 10.1-4.9 10.1-8.4 0-1.3-1.5-2.4-2.8-2.4-3.5 0-8 2.6-10.8 9-.6.3-1.1.9-1.2 1.6 0 .7.2.9.2 1.6.1 2.3 1.8 4.1 4.1 4.4 5.1 0 9.4-2.8 12.6-5.8-.6 1.7-1 3.5-1.1 5.3 0 1.7.7 2.7 1.7 2.7.8 0 1.4-.6 1.4-1.4 0-.6-.4-1-.4-1.8.2-3.3 4-11.5 7.6-18.1zm-14.7 5.4c.5 0 .8.1.8.7 0 1.4-5.4 5.2-7.8 5.3 1.1-1.6 4.9-6 7-6z">
+                </path>
+                <path fill="#B56C6C"
+                    d="M168.8 26.2c-3 0-8.2 3.3-8.2 6.8 0 3.1 4.8 2.9 4.8 5.6.1 1.3-1 2.4-2.3 2.5h-.1c-.9.1-1.8-.5-1.9-1.4v-.4c0-.6-.6-1.1-1.2-1h-.1c-.9.1-1.6.8-1.5 1.7 0 1.6 1.8 3.3 4.2 3.3 3.9 0 5.9-2.4 5.9-4.7 0-4.4-4.9-4.1-4.9-6 0-2 3.2-3.8 4.1-3.8.5 0 .9.4 1 .9 0 .3-1 .5-1 1.6 0 .7.7 1.2 1.4 1.2 1.4 0 2.2-2.4 2.2-3.8.1-1.5-1.1-2.5-2.4-2.5z">
+                </path>
+            </svg>
+            <ul>
+                <li>dogs</li>
+                <li>cats</li>
+                <li>birds</li>
+                <li>small pets</li>
+                <li>aquariums</li>
+                <li>reptiles</li>
+                <li>horses</li>
+                <li>best pet products</li>
+                <li>about</li>
+            </ul>
+            <i class="fas fa-search fa-2xl"></i>
+        </nav>
+    </section>
+
+    <!-- =======================================
+
+            COUNTER SECTION 
+
+        =======================================  -->
+
+
+    <section id="counter">
+        <p> <span class="bold_counter">140+ Million</span> <span class="underline_text">Annual Readers</span><i
+                class="fas fa-angle-right fa-xs"></i></p>
+        <p><span class="bold_counter">700+ </span> <span class="underline_text">Articles Medically Reviewed</span><i
+                class="fas fa-angle-right fa-xs"></i></p>
+        <p><span class="bold_counter">300+ </span><span class="underline_text">Health Topics Covered</span><i
+                class="fas fa-angle-right fa-xs"></i></p>
+        <p><span class="bold_counter">400+ </span><span class="underline_text">Dog Breeds</span><i
+                class="fas fa-angle-right fa-xs"></i></p>
+    </section>
+
+    <!-- =======================================
+
+            BANNER SECTION 
+
+        =======================================  -->
+
+    <section id="banner">
+        <img src="asset/images/bg/cat-banner.webp" alt="">
+    </section>
+
+    <!-- =======================================
+
+            B-CARD SECTION 
+
+        =======================================  -->
+
+    <secction id="bcard">
+        <div>
+            <p>cats</p>
+            <p>make a special cake for your cats's birthhday</p>
+            <hr>
+        </div>
+    </secction>
+
+    <!-- =======================================
+
+            B-CARD_THREE SECTION 
+
+        =======================================  -->
+
+    <section id="three-card">
+        <div>
+            <p>10 ways dog shows they love you</p>
+        </div>
+        <div>
+            <img src="asset/images/cats/cat1.webp" alt="catone">
+            <p class="bcard-stitle">cat</p>
+            <p class="bcard-btitle">how cats show they care</p>
+            <p class="bcard-author">By<span>amy shojai</span></p>
+        </div>
+        <div>
+            <img src="asset/images/cats/cat2.webp" alt="cattwo">
+            <p class="bcard-stitle">cat</p>
+            <p class="bcard-btitle">ideas for showering <br> your cats with affection</p>
+            <p class="bcard-author">By<span>amy shojai</span></p>
+        </div>
+    </section>
+
+    <!-- =======================================
+
+            HORSE-TITLE SECTION
+
+        =======================================  -->
+
+    <section id="horse-title">
+        <div>
+            <p>
+                your new horse
+            </p>
+            <i class="fas fa-arrow-right fa-2xl"></i>
+        </div>
+    </section>
+
+    <!-- =======================================
+
+            HORSE-CARD SECTION
+
+        =======================================  -->
+
+    <section id="horse-card">
+        <div>
+            <img src="asset/images/horses/h1.webp" alt="catone">
+            <p class="bcard-stitle">horse care</p>
+            <p class="bcard-btitle">the first few days with your new horse</p>
+            <p class="bcard-author">By<span>katherine blocksdorf</span></p>
+        </div>
+        <div>
+            <img src="asset/images/horses/h2.webp" alt="catone">
+            <p class="bcard-stitle">horse ownership basics</p>
+            <p class="bcard-btitle">how to introduce a horse to the herd</p>
+            <p class="bcard-author">By<span>katherine blocksdorf</span></p>
+        </div>
+        <div>
+            <img src="asset/images/horses/h3.webp" alt="catone">
+            <p class="bcard-stitle">riding & equestrian sports</p>
+            <p class="bcard-btitle">common beinner horse riding mistakes</p>
+            <p class="bcard-author">By<span>katherine blocksdorf</span></p>
+        </div>
+    </section>
+
+    <!-- =======================================
+
+            VETERINARY SECTION
+
+        =======================================  -->
+
+    <section id="veterinary">
+        <div class="div_one">
+            <img class="banner-size" src="asset/images/sec-banner/sec-b1.webp" alt="sec-banner">
+            <p class="main_vetn_t">our veterinary review board process</p>
+            <p class="main_vetn_p">Our Veterinary Review Board is made up of Doctors of Veterinary Medicine who examine
+                our content for
+                medical accuracy and reliability to ensure that it reflects the most up-to-date health information. Meet
+                the team and learn more <span>about our review process.</span></p>
+            <div>
+                <p>
+                    <img src="asset/images/circle num/circle-1.png" alt="">
+                    <span>written</span>
+                </p>
+                <p>
+                    <img src="asset/images/circle num/circle-2.png" alt="">
+                    <span>reviewed</span>
+                </p>
+            </div>
+            <div>
+                <p>
+                    <img src="asset/images/circle num/circle-3.png" alt="">
+                    <span>edited</span>
+                </p>
+                <p>
+                    <img src="asset/images/circle num/circle-4.png" alt="">
+                    <span>approved</span>
+                </p>
+            </div>
+        </div>
+        <div class="div_two">
+            <p class="main-hleft">Meet Our Veterinary Review Board</p>
+            <p class="p-left_sec">learn more <i class="fas fa-angle-right fa-xs"></i></p>
+            <div class="card-row1">
+                <div class="card-row1_c1">
+                    <img class="card-pimg" src="asset/images/card profile/cp1.webp" alt="card-img">
+                    <div class="card_content">
+                        <p class="title">dr.nick saint-erne,<br><span>dvm</span></p>
+                        <p class="para">doctor of veterinary <br> medicine</p>
+                    </div>
+                </div>
+                <div class="card-row1_c1">
+                    <img class="card-pimg" src="asset/images/card profile/cp2.webp" alt="card-img">
+                    <div class="card_content">
+                        <p class="title">dr.nelva j. brayant,<br><span>dvm,mph</span></p>
+                        <p class="para">doctor of veterinary <br> medicine</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-row1">
+                <div class="card-row1_c1">
+                    <img class="card-pimg" src="asset/images/card profile/cp3.webp" alt="card-img">
+                    <div class="card_content">
+                        <p class="title">dr.monica tarantino,<br><span>dvm</span></p>
+                        <p class="para">doctor of veterinary <br> medicine</p>
+                    </div>
+                </div>
+                <div class="card-row1_c1">
+                    <img class="card-pimg" src="asset/images/card profile/cp4.webp" alt="card-img">
+                    <div class="card_content">
+                        <p class="title">dr.bartley harrison,<br><span>dvm</span></p>
+                        <p class="para">doctor of veterinary <br> medicine</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-row1">
+                <div class="card-row1_c1">
+                    <img class="card-pimg" src="asset/images/card profile/cp5.webp" alt="card-img">
+                    <div class="card_content">
+                        <p class="title">dr.alycia washington,<br><span>dvm,ms</span></p>
+                        <p class="para">doctor of veterinary <br> medicine</p>
+                    </div>
+                </div>
+                <div class="card-row1_c1">
+                    <img class="card-pimg" src="asset/images/card profile/cp6.webp" alt="card-img">
+                    <div class="card_content">
+                        <p class="title">dr.natasha diehl,<br><span>dvm,mph</span></p>
+                        <p class="para">doctor of veterinary <br> medicine</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =======================================
+
+            SUBSCRIBER SECTION
+
+        =======================================  -->
+
+    <section id="subscribe">
+        <div class="subs-div1">
+            <img src="asset/images/bg/bg-subscribe.png" alt="subscribe-img">
+            <div class="subdiv">
+                <p class="divh">spruce up your inbox!</p>
+                <p class="divtxt">learn how to create a happy, healthy <br> home for your pet.</p>
+            </div>
+        </div>
+        <div class="subs-div2">
+            <input type="text" value=" Enter Your Email">
+            <input type="button" value="SIGN UP">
+        </div>
+    </section>
+
+    <!-- =======================================
+
+            CAT LANG TITLE SECTION
+
+        =======================================  -->
+
+    <section id="cat-langt">
+        <div>
+            <p>
+                speaking your cat's language
+            </p>
+            <i class="fas fa-arrow-right fa-2xl"></i>
+        </div>
+    </section>
+
+    <!-- =======================================
+
+            CAT LANG CARD SECTION
+
+        =======================================  -->
+
+    <section id="catl-card">
+        <div>
+            <img src="asset/images/cats/cards/c1.webp" alt="catone">
+            <p class="bcard-stitle">cat behavior & training</p>
+            <p class="bcard-btitle">3 reasons cats rub against your legs</p>
+            <p class="bcard-author">By<span>liz waynick</span></p>
+        </div>
+        <div>
+            <img src="asset/images/cats/cards/c2.webp" alt="catone">
+            <p class="bcard-stitle">living with cats</p>
+            <p class="bcard-btitle">common cat body language, explained</p>
+            <p class="bcard-author">By<span>amy shojai</span></p>
+        </div>
+        <div>
+            <img src="asset/images/cats/cards/c3.webp" alt="catone">
+            <p class="bcard-stitle">cat behavior & training</p>
+            <p class="bcard-btitle">4 reason cats slap each other</p>
+            <p class="bcard-author">By<span>liz waynick</span></p>
+        </div>
+    </section>
+
+    <!-- =======================================
+
+            EXPLORE CARD SECTION
+
+        =======================================  -->
+
+    <section id="expo-card">
+        <div class="title_d">
+            <p>
+                explore more from the spruce pets
+            </p>
+        </div>
+        <div class="expo-card_r1">
+            <div class="card-areas">
+                <img src="asset/images/explore card/row1/p1.webp" alt="catone">
+                <p class="bcard-stitle">dog training tips</p>
+                <p class="bcard-btitle">10 fun and easy tricks to teach your dog</p>
+                <p class="bcard-author">By<span>amy bender</span></p>
+            </div>
+            <div class="card-areas">
+                <img src="asset/images/explore card/row1/p2.webp" alt="cattwo">
+                <p class="bcard-stitle">hamsters</p>
+                <p class="bcard-btitle">how to choose the bestcage for your dwraf hamster</p>
+                <p class="bcard-author">By<span>lianne mcloed,dvm</span></p>
+            </div>
+            <div class="card-areas">
+                <img src="asset/images/explore card/row1/p3.webp" alt="catone">
+                <p class="bcard-stitle">dog breeds</p>
+                <p class="bcard-btitle">10 popular dog breeds from the united states</p>
+                <p class="bcard-author">By<span>jackie brown</span></p>
+            </div>
+            <div class="card-areas">
+                <img src="asset/images/explore card/row1/p4.webp" alt="cattwo">
+                <p class="bcard-stitle">dogs</p>
+                <p class="bcard-btitle">can dogs eat pasta?</p>
+                <p class="bcard-author">By<span>luaren murphy<span></p>
+            </div>
+        </div>
+        <div class="expo-card_r2">
+            <div class="card-areas">
+                <img src="asset/images/explore card/row2/p1.webp" alt="catone">
+                <p class="bcard-stitle">cat</p>
+                <p class="bcard-btitle">how to find a reliable cat sitter</p>
+                <p class="bcard-author">By<span>jackie brown</span></p>
+            </div>
+            <div class="card-areas">
+                <img src="asset/images/explore card/row2/p2.webp" alt="cattwo">
+                <p class="bcard-stitle">dog breeds</p>
+                <p class="bcard-btitle">10 dog breeds that love to play</p>
+                <p class="bcard-author">By<span>lauren murphy</span></p>
+            </div>
+            <div class="card-areas">
+                <img src="asset/images/explore card/row2/p3.webp" alt="catone">
+                <p class="bcard-stitle">bearded dragons</p>
+                <p class="bcard-btitle">everything you need to know about bearded dragons as pets</p>
+                <p class="bcard-author">By<span>lianne mcleod, dvm</span></p>
+            </div>
+            <div class="card-areas">
+                <img src="asset/images/explore card/row2/p4.webp" alt="cattwo">
+                <p class="bcard-stitle">cat</p>
+                <p class="bcard-btitle">why do cats chase lasers?</p>
+                <p class="bcard-author">By<span>laura mueller</span></p>
+            </div>
+        </div>
+        <div class="expo-card_r3">
+            <div class="card-areas">
+                <img src="asset/images/explore card/row3/p1.webp" alt="catone">
+                <p class="bcard-stitle">birds adoption</p>
+                <p class="bcard-btitle">8 most gentel pet bird species</p>
+                <p class="bcard-author">By<span>alyson kalhagen</span></p>
+            </div>
+            <div class="card-areas">
+                <img src="asset/images/explore card/row3/p2.webp" alt="cattwo">
+                <p class="bcard-stitle">larger bird breeds</p>
+                <p class="bcard-btitle">21 type of hybrid macaws you should know</p>
+                <p class="bcard-author">By<span>alyson kalhagen</span></p>
+            </div>
+            <div class="card-areas">
+                <img src="asset/images/explore card/row3/p3.webp" alt="catone">
+                <p class="bcard-stitle">cat litter & waste diposal</p>
+                <p class="bcard-btitle">dr. elsey's precious cat litter review</p>
+                <p class="bcard-author">By<span>joline buscemi</span></p>
+            </div>
+            <div class="card-areas">
+                <img src="asset/images/explore card/row3/p4.webp" alt="cattwo">
+                <p class="bcard-stitle">aquatic turtles</p>
+                <p class="bcard-btitle">how to care for pet red eared slider turtles</p>
+                <p class="bcard-author">By<span>adrienne kruzer</span></p>
+            </div>
+        </div>
+        <div class="expo-card_r4">
+            <div class="card-areas">
+                <img src="asset/images/explore card/row4/p1.webp" alt="catone">
+                <p class="bcard-stitle">living with dogs</p>
+                <p class="bcard-btitle">teacup dogs for tiny-canine lovers</p>
+                <p class="bcard-author">By<span>christina donnelly</span></p>
+            </div>
+            <div class="card-areas">
+                <img src="asset/images/explore card/row4/p2.webp" alt="cattwo">
+                <p class="bcard-stitle">freshwater fish breeds</p>
+                <p class="bcard-btitle">can you add a texas cichild to your home aquarium?</p>
+                <p class="bcard-author">By<span>shirlie sharpe</span></p>
+            </div>
+            <div class="card-areas">
+                <img src="asset/images/explore card/row4/p3.webp" alt="catone">
+                <p class="bcard-stitle">cat</p>
+                <p class="bcard-btitle">10 best hairless cat breeds for unique pet pal</p>
+                <p class="bcard-author">By<span>erica puisis</span></p>
+            </div>
+            <div class="card-areas">
+                <img src="asset/images/explore card/row4/p4.webp" alt="cattwo">
+                <p class="bcard-stitle">dog breeds</p>
+                <p class="bcard-btitle">this dog breedis friendly with people of all ages</p>
+                <p class="bcard-author">By<span>jackie brown</span></p>
+            </div>
+        </div>
+        <div class="expo-card_r5">
+            <div class="card-areas">
+                <img src="asset/images/explore card/row5/p1.webp" alt="catone">
+                <p class="bcard-stitle">litter box training</p>
+                <p class="bcard-btitle">how to stop your cat from pooping in your sink and bathtub</p>
+                <p class="bcard-author">By<span>amy shojai</span></p>
+            </div>
+            <div class="card-areas">
+                <img src="asset/images/explore card/row5/p2.webp" alt="cattwo">
+                <p class="bcard-stitle">cat diseases & disorders</p>
+                <p class="bcard-btitle">what is hyperthyroidism and how is it treated in cats?</p>
+                <p class="bcard-author">By<span>adrienne kruzer</span></p>
+            </div>
+            <div class="card-areas">
+                <img src="asset/images/explore card/row5/p3.webp" alt="catone">
+                <p class="bcard-stitle">dog diseases & disorders</p>
+                <p class="bcard-btitle">what to do if your dog is coughing and gagging</p>
+                <p class="bcard-author">By<span>anrienne kruzer</span></p>
+            </div>
+            <div class="card-areas">
+                <img src="asset/images/explore card/row5/p4.webp" alt="cattwo">
+                <p class="bcard-stitle">exotic pets/p>
+                    <p class="bcard-btitle">10 best exotic pets for small spaces</p>
+                    <p class="bcard-author">By<span>lianne mcleod, dvm</span></p>
+            </div>
+        </div>
+    </section>
+
+
+    <hr class="hr_bar">
+
+    <!-- =======================================
+
+            BOTTOM SECTION
+
+        =======================================  -->
+
+    <section id="bottom-area">
+        <div class="bot-div">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 171.5 53.9">
+                <path
+                    d="M7.2 44.1c-1.9 0-3.7-.7-5.3-1.8h-.2L.3 43.6H.1L0 36.2h.2c.6 4.1 3.9 7.4 7 7.4 2.3 0 3.5-.8 3.5-3.6 0-1.9-2-3.3-5-4.7-3-1.3-5.5-3-5.5-6.6.1-3.3 2.8-5.9 6.1-5.8h.2c1.6 0 3.1.5 4.3 1.5h.1l1.2-1.2h.1l.2 5.9h-.2c-.3-1.6-1.1-3-2.2-4.1-1-.9-2.3-1.5-3.6-1.5-1.6-.1-2.9 1.2-3 2.8v.4c0 2.4 1.9 3.5 4.5 4.6 3.4 1.4 6 3 6 6.4.1 4.4-3 6.4-6.7 6.4zM27.1 44.1c-1.9.1-3.8-.5-5.1-1.9h-.1v5.4c-.1 1.3 0 2.6.2 3.8.1.9.8 1.7 1.7 2 .3.1.7.2 1 .2v.2H15v-.2c.3 0 .7-.1 1-.2.9-.2 1.6-1 1.7-2 .2-1.3.3-2.6.2-3.8V29.1c0-.9 0-2.5-.1-3.3 0-.6-.3-1.2-.9-1.6-.7-.4-1.4-.7-2.2-.7v-.2h6.8c.2 0 .4.1.4.4l-.1 3.1h.2c1-2.3 3.2-3.9 5.8-4 4.4 0 8.2 3.3 8.2 10.6-.1 6.8-3.8 10.7-8.9 10.7zm-.2-20.4c-2.6 0-5.1 2.9-5.1 6.8v6.1c-.1 1.8.4 3.7 1.4 5.2a4.6 4.6 0 003.6 1.7c2.6 0 4.5-2.4 4.5-10s-1.9-9.8-4.4-9.8zM50.5 27.9c-1-.1-1.9-.8-2.2-1.8-.3-.8-.6-1-1.1-1-.9 0-2.8 2.4-3.1 6.1 0 .4-.1 1.7-.1 2.9v3.3c-.1 1.3 0 2.6.2 3.9.1.9.7 1.7 1.6 1.9.4.1.7.2 1.1.2v.2H37v-.2c.4 0 .7-.1 1.1-.2.9-.2 1.5-1 1.6-1.9.2-1.3.3-2.6.2-3.9v-8c0-.9 0-3.1-.1-3.8 0-.6-.4-1.2-.9-1.6-.5-.3-1.1-.4-1.6-.4v-.2h6.5c.2 0 .3.1.3.3v5c.4-1.7 1.4-3.3 2.6-4.5.9-.7 2-1.2 3.2-1.2.8 0 1.6.3 2.3.8.5.6.7 1.3.6 2 .1 1.2-.8 2.2-2 2.3-.1-.2-.2-.2-.3-.2zM68.3 43.8c-.1 0-.2-.1-.2-.2v-3.8H68c-.4 1.2-1.2 2.3-2.2 3.1-1.1.8-2.5 1.3-3.8 1.2-1.7.1-3.4-.5-4.6-1.8-.8-1.3-1.3-2.8-1.2-4.4v-9.1c0-.9 0-2.3-.1-3 0-.7-.3-1.4-.9-1.9-.6-.3-1.2-.4-1.8-.4v-.2h6.7c.1 0 .3 0 .3.4V38.6c-.1 1.2.2 2.3.7 3.4.6.8 1.6 1.3 2.6 1.2 2 0 3.9-2.4 4.3-5.6.1-1.1.2-2.1.1-3.2v-5.5c0-1 0-2-.1-3 0-.7-.3-1.4-.9-1.8-.6-.3-1.2-.5-1.8-.5v-.2H72c.2 0 .3.1.3.4v14.5c0 .9 0 2.2.1 3 0 .7.4 1.4 1 1.9.6.3 1.2.4 1.8.4v.2c-.9-.2-6.7 0-6.9 0zM85.2 44.1c-2.4 0-4.7-.9-6.4-2.5-2-2-2.7-4.8-2.7-8.3 0-6.5 4.9-10.4 9.2-10.4 2.9 0 5.1 1.1 6 2.2.6.6.9 1.4 1 2.2.1 1-.7 2-1.7 2.1h-.2c-1.7 0-2.2-1-2.4-2.5-.4-2.4-.9-3.4-2.8-3.4-1 0-1.9.4-2.7 1-1.2 1.1-1.8 4.3-1.8 8 0 4.3.7 7.3 1.9 9.1.6 1.1 1.8 1.7 3 1.6 4.2 0 5.7-3.6 6.4-6.1l.6.2c-1 3.7-3.5 6.8-7.4 6.8zM112.5 32.2H99.7c0 4.5.8 7.6 2.2 9.2.9 1 2.2 1.5 3.6 1.4 4.1 0 5.5-2.6 6.4-5.8l.5.1c-.8 4.2-3.7 6.9-7.7 6.9-2.5.1-5-.7-6.8-2.4-1.9-2.1-2.7-4.6-2.7-8 0-6.4 3.8-10.8 8.9-10.8 5.9 0 8.6 4 8.6 7.7-.1.5-.1 1.2-.2 1.7zm-5.8-7.8c-.7-.7-1.7-1-2.6-1-.9 0-1.8.3-2.4 1-1.1 1-1.8 3.6-1.9 7.1h6.7c1.3 0 1.8-.5 1.8-2.1-.2-2.5-.7-4-1.6-5zM7.2 17.9c-.8.1-1.6-.2-2.2-.7-.5-.5-.8-1.2-.7-1.9 0-.5.1-7 .1-8.2C4 7 3.3 7.1 2.9 7v-.1c1.6-.3 2.7-1.3 3.6-4.7h.2v4.5h2.6v.4H6.7l-.1 8.5c0 .9.4 1.5 1.4 1.5.7 0 1.4-.4 1.8-1l.1.1c-.6 1-1.6 1.6-2.7 1.7zM10.9 17.6c.2 0 .4-.1.6-.1.5-.1.8-.5.9-1 .1-.7.1-1.4.1-2.1V2.9c0-.6 0-1.1-.1-1.7 0-.3-.2-.7-.5-.8-.3-.2-.7-.3-1-.3V0h3.7c.1 0 .2.1.2.2 0 .5-.1 1.9-.1 3v6h.1c.3-.9.8-1.6 1.6-2.1.6-.4 1.4-.6 2.1-.6.9-.1 1.8.2 2.5.9.5.7.7 1.6.6 2.5v4.4c0 .7 0 1.4.1 2.1 0 .5.4.9.9 1.1.2.1.4.1.6.1v.1h-5.3v-.1c.2 0 .4-.1.6-.1.5-.2.7-.4.9-1.1.1-.7.2-1.4.1-2.1V9.9c.1-.7 0-1.4-.4-2.1-.3-.4-.9-.7-1.4-.6-1.5.2-2.7 1.5-2.7 3.1-.1.6-.1 1.2-.1 2v2c0 .7 0 1.4.1 2.1.2.7.4.8.9 1 .2.1.4.1.6.1v.1h-5.3zM33.5 11.5h-6.9c0 2.4.4 4.1 1.2 4.9.5.5 1.2.8 1.9.8 2.2 0 2.9-1.4 3.4-3.1l.3.1c-.2 2.1-2 3.7-4.2 3.7-1.4.1-2.7-.4-3.7-1.3-1-1.2-1.6-2.7-1.4-4.3 0-3.5 2-5.8 4.8-5.8 3.2 0 4.6 2.1 4.6 4.2v.8zm-3.2-4.2c-.3-.3-.8-.5-1.4-.5-.5 0-1 .2-1.3.5-.6.5-1 1.9-1 3.8h3.6c.7 0 1-.3 1-1.1 0-1-.2-1.9-.9-2.7z">
+                </path>
+                <path fill="#B56C6C"
+                    d="M128.1 26.8c0-1.2 1.6-1.4 2.7-1.4 7.2 0 15.9-8.7 15.9-14 0-4.6-2.2-6.9-7.9-6.9-13.3 0-23.4 9.2-23.4 15.8 0 .6.6 1.2.6 1.9 0 1.1-1 1.9-2 1.9h-.1c-1.1-.1-2-1.2-1.9-2.3 0-10.7 11.8-19.9 27.7-19.9 6.3 0 10 3.2 10 9.2 0 7.4-10.6 17.6-19 17.6-1.8-.1-2.6-.8-2.6-1.9zm7.7-15.7c0 .8-.9 1.6-2 2.6-3.1 3-5.8 6.4-7.8 10.2-5.9 10.4-6.3 15.6-6.3 19.3 0 .6 0 1.7-.9 1.7-1.2 0-2.3-.9-2.4-2.2 0-1.3.9-9 6.7-19.4 3.7-6.6 6.6-10.4 8.6-12.2.7-.8 1.7-1.4 2.8-1.4.7-.1 1.4.5 1.5 1.2-.2 0-.2.1-.2.2zM161.1 23.9c1.7-.7 3.4-1.1 5.2-1.2 1 0 1.9.1 1.9.7 0 .3-.1.6-.1 1s.1.6.7.6c.9 0 2.1-1.4 2.1-2.7 0-1.4-1.2-2.2-3.6-2.2-1.5 0-2.9.3-4.4.7 2.3-3.9 2.7-4.8 3.8-5.8 1.3-1 1.4-1.6 1.4-2.4s-.5-1.2-1.4-1.2-1.6.7-2.8 2.3c-1.8 2.6-3.4 5.4-4.9 8.2-.7.2-1.4.2-2.1.3-.8 0-1-.5-2-.5-.9 0-1.7.7-1.8 1.6v.1c0 1 .8 1.4 2.9 1.4.5 0 1 0 1.4-.1-1.1 2.1-2.1 4.3-3.1 6.5-.2.2-.4.4-.6.7-2.4 3.3-7.3 8.7-13.3 8.7-1.1 0-2-.8-2-1.9v-.1c0-.7.1-1.1 1.3-1.4 4.2-1 10.1-4.9 10.1-8.4 0-1.3-1.5-2.4-2.8-2.4-3.5 0-8 2.6-10.8 9-.6.3-1.1.9-1.2 1.6 0 .7.2.9.2 1.6.1 2.3 1.8 4.1 4.1 4.4 5.1 0 9.4-2.8 12.6-5.8-.6 1.7-1 3.5-1.1 5.3 0 1.7.7 2.7 1.7 2.7.8 0 1.4-.6 1.4-1.4 0-.6-.4-1-.4-1.8.2-3.3 4-11.5 7.6-18.1zm-14.7 5.4c.5 0 .8.1.8.7 0 1.4-5.4 5.2-7.8 5.3 1.1-1.6 4.9-6 7-6z">
+                </path>
+                <path fill="#B56C6C"
+                    d="M168.8 26.2c-3 0-8.2 3.3-8.2 6.8 0 3.1 4.8 2.9 4.8 5.6.1 1.3-1 2.4-2.3 2.5h-.1c-.9.1-1.8-.5-1.9-1.4v-.4c0-.6-.6-1.1-1.2-1h-.1c-.9.1-1.6.8-1.5 1.7 0 1.6 1.8 3.3 4.2 3.3 3.9 0 5.9-2.4 5.9-4.7 0-4.4-4.9-4.1-4.9-6 0-2 3.2-3.8 4.1-3.8.5 0 .9.4 1 .9 0 .3-1 .5-1 1.6 0 .7.7 1.2 1.4 1.2 1.4 0 2.2-2.4 2.2-3.8.1-1.5-1.1-2.5-2.4-2.5z">
+                </path>
+            </svg>
+            <p class="input_txt">Learn how to create a happy, healthy home for your pet.</p>
+            <div class="in_div">
+                <input class="inp_1" type="text" name="" id="" placeholder="Enter Your email">
+                <input class="inp_2" type="submit" value="SIGN UP">
+            </div>
+            <div class="social">
+                <p class="s_head">follow us:</p>
+                <i class="fab fa-instagram"></i>
+                <i class="fa-brands fa-pinterest"></i>
+                <i class="fa-brands fa-facebook-f"></i>
+            </div>
+        </div>
+        <div class="bot-div ">
+            <div class="f-li">
+                <ul>
+                    <li>dogs</li>
+                    <li>cats</li>
+                    <li>birds</li>
+                    <li>small pets</li>
+                    <li>aquariums</li>
+                    <li>reptiles</li>
+                    <li>horses</li>
+                    <li>what to buy</li>
+                </ul>
+            </div>
+            <div class="s-li">
+                <ul>
+                    <li>about us</li>
+                    <li>terms of use</li>
+                    <li>editorial guidelines</li>
+                    <li>cookies</li>
+                    <li>california privacy</li>
+                    <li>notice</li>
+                </ul>
+            </div>
+            <div class="t-li">
+                <ul>
+                    <li>advertise</li>
+                    <li>careers</li>
+                    <li>privacy policy</li>
+                    <li>contact</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- =======================================
+
+            COPYRIGHT SECTION
+
+    =======================================  -->
+
+    <section id="copyright">
+        <p>
+            all &copy;copyright reserved to binafif 2022
+        </p>
+    </section>
+
+</body>
+
+</html>
